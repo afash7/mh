@@ -13,6 +13,57 @@
 */
 /* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* IMPORT ------------------------------------------------------------*/
 /* GENERAL ------------------------------------------------------------*/
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.popup-content {
+  display: none;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+
+.popup img {
+  max-width: 100%;
+}
+
+
+
+
+
+
 .cf:after,
 .cf:before {
   content: "";
@@ -276,7 +327,7 @@ body.home #main {
 }
 #filter-container figure figcaption .heading {
   margin-bottom: 13px;
-  font-size: 32px;
+  font-size: 16px;
   line-height: 1.2em;
   text-transform: uppercase;
   display: block;
